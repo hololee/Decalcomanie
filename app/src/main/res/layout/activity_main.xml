@@ -4,27 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     tools:context=".MainActivity">
 
 
+    <!-- TODO: 이미지 추가할것. -->
+
     <ImageView
-        android:id="@+id/intro_logo"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_logo_intro" />
+        android:scaleType="centerCrop" />
+
 
     <TextView
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btns_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/selector_white"
+        android:elevation="3dp"
+        android:fontFamily="@font/noto_bold"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/btn_start"
+        android:textColor="@color/text_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/btns_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/intro_logo"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="COALA APP PROJECT"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/noto_italic"
+            android:text="LICENSE"
+            android:textColor="@color/hyper_link"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/noto_italic"
+            android:text="GITHUB"
+            android:textColor="@color/hyper_link"
+            android:textSize="11sp" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>

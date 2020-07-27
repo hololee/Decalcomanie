@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Decalcomanie</string>
+    <string name="btn_start">시작하기</string>
+    <string name="permission_title">앱 사용 권한 요청</string>
 </resources>
